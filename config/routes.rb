@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+  
+#Define Root URL
+root 'pages#Index'
+
+#Define pages for Pages	
+
+#Chages the path of the pages
+  get 'home' => 'pages#home'
+
+  get 'profile' => 'pages#profile'
+
+  get 'explore' => 'pages#explore'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
