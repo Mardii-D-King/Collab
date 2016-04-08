@@ -7,11 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
 	<!--Calls the folder to load the snippet-->
 <%= render '/layouts/nav' %>
 
-<%= yield %>
+<!--Creates a margin away from both end-->
+<div class="container">
+  <%= yield %>
+</div>
 
 </body>
 </html>
