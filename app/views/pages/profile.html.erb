@@ -18,27 +18,22 @@
    </div>
 
    <div class="col-xs-6">
+	<% for @p in @posts %>
       <div class="panel panel-default">
          <div class="panel-body">
-           <p>Inquiries</p>
+		 <p><%= @p.content %></p>
          </div>
       </div>
+  <% end %>
    </div>
-
+  
    <div class="col-xs-3">
       <div class="panel panel-default">
          <div class="panel-body">
            <p>Cell</p>
         </div>
       </div>
-   </div>
-
-</div>
-
-<!--Begining of 3rd row-->
-<div class = "row">
-   <div class="col-xs-3 col-xs-offset-9">
-      <div class="panel panel-default">
+  	 <div class="panel panel-default">
          <div class="panel-body">
            <p>Notice Board</p>
         </div>
