@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :posts
 #Define Root URL
-root 'pages#Index'
+root 'pages#index'
 
 #Define pages for Pages	
 

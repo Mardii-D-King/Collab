@@ -2,7 +2,7 @@
 class PagesController < ApplicationController
 
   #back-end code for pages/index
-  def Index
+  def index
   end
 
   #back-end code for pages/index

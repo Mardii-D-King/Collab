@@ -1,0 +1,81 @@
+<!--If the user is NOT signed in render this-->
+<% if !user_signed_in? %>
+	<!--If the user IS signed in, render this-->
+	<style>
+body{
+    background:
+    /*Allow some level of transparacy to darken.*/		linear-gradient(
+		rgba(0,0,0,0.1),
+		rgba(0,0,0,0.1)),
+	
+    /*Only displayed once, center horizontal and vertical, dont let scroll change position.*/	
+	url("/cool_image.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+	h1{
+	    color: white;
+	    font-weight:bold;
+	}
+	.container-index{
+	   margin-right: 15%;
+	   margin-left:15%;
+	}
+	.text{
+	    color: white;
+	    font-weight: 300;
+	    font-size: 150%;
+	}
+	.footer-links{
+	    text-align: center;
+	    color: white;
+	    margin-top: 30%;
+	    font-size: 75%;
+	}
+	.log-in{
+	    float: right;
+	    width: 300px;
+	    height:150px;
+	    margin-top:7.5%;
+	}
+
+	.sign-up{
+	    float: right;
+	    width: 300px;
+	    height:250px;
+	}
+
+	</style>
+
+	<div class="container-index row">
+	    <div class="col-sm-6">
+		<h1>Welcome to ThinkScheme</h1><br>
+	        <p class="text">
+	            ->Collaborate with friends on projects.<br>
+	            ->Study and quiz your teamates<br>
+	            ->Share your ideas.<br>
+	            ->Make learning and doing work fun.
+	        </p>
+	    </div>
+	<div class="col-sm-6">
+	    <div class="log-in panel">
+		Log In
+	    </div>
+	    <div class="sign-up panel">
+                Sign Up
+	    </div>
+	</div>
+
+	<div class="col-sm-12">
+	    <p class="footer-links">About Help Blog Status Jobs Terms Privacy Cookies Ads info Brand Advertise Businesses Media Developers Directory © 2016 ThinkScheme</p>
+
+	</div>
+	</div>
+
+<% else%>
+	Signed In 
+
+<% end %>
